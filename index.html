@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suhani Dhirwan — BFA Applied Art | Graphic Era Hill University</title>
+  <meta name="description" content="Portfolio of Suhani Dhirwan — BFA Applied Art student at Graphic Era Hill University, Dehradun. Specialising in drawing, painting, graphic design, illustration, and visual storytelling.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20%22100%22%20%22100%22><text y=%22.9em%22 font-size=%2290%22>✦</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="progressBar"></div>
+
+  <!-- Header / Navigation (Matches Reference Layout) -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Suhani Portfolio">
+        <span>SUHANI</span><span class="brand-dot">.</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#activities" class="nav-link">Activities</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="status-badge">
+          <span class="status-pulse"></span>
+          <span>Open to Creative Opportunities</span>
+        </div>
+        <a href="#contact" class="btn-header-cta">Let's Connect</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <a href="#hero" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About Me</a>
+    <a href="#skills" class="nav-link">Skills & Tools</a>
+    <a href="#projects" class="nav-link">Featured Projects</a>
+    <a href="#activities" class="nav-link">Achievements & Activities</a>
+    <a href="#contact" class="nav-link">Get In Touch</a>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION (Matches Reference Mockup Design with Suhani's Photo)
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Content: Exact Typography Hierarchy from Reference -->
+          <div class="hero-content">
+            <span class="hero-hello-tag">Hello</span>
+            
+            <h1 class="hero-main-title">I am Suhani</h1>
+            
+            <div class="hero-role-wrapper">
+              <h2 class="hero-role-title">
+                <span class="role-dynamic-text">Applied Art & Visual Storytelling</span>
+              </h2>
+            </div>
+
+            <p class="hero-description">
+              A creative BFA student specialising in Applied Art at <strong>Graphic Era Hill University, Dehradun</strong>. I love exploring colours, ideas, illustration, and visual storytelling—learning, experimenting, and building my own creative world one project at a time.
+            </p>
+
+            <!-- Call to Action Group: Hand-Drawn Brush Underline from Reference -->
+            <div class="hero-cta-wrapper">
+              <a href="#projects" class="cta-brush-link" id="heroWorkCta">
+                ✦ Explore My Work
+                <!-- SVG Chalk/Brush Underline replicating reference -->
+                <svg class="brush-stroke-svg" viewBox="0 0 240 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                  <path class="brush-path-main" d="M 6,11 C 45,5 98,4 150,8 C 185,11 210,7 234,10" />
+                  <path class="brush-path-sub" d="M 12,14 C 55,10 115,11 175,13 C 200,14 218,12 230,13" />
+                </svg>
+              </a>
+
+              <a href="#about" class="hero-secondary-btn">
+                <span>More About Me</span>
+                <span style="font-size: 1.1rem; line-height: 1;">↗</span>
+              </a>
+            </div>
+
+            <!-- Authentic Socials from Netlify Site -->
+            <div class="hero-socials">
+              <a href="https://www.linkedin.com/in/suhani-dhirwan-363295323" target="_blank" rel="noopener noreferrer" class="hero-social-link">LinkedIn ↗</a>
+              <span style="color: var(--border-subtle);">/</span>
+              <a href="https://drive.google.com/file/d/165MOUhLqwBdlDkNQ_263efK2kBZdy2E5/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="hero-social-link">Drive Artwork ↗</a>
+              <span style="color: var(--border-subtle);">/</span>
+              <a href="https://drive.google.com/file/d/1skkXXWYB6b9PRFnkpFz6WrKFvFVFgU-R/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="hero-social-link">Certificates ↗</a>
+              <span style="color: var(--border-subtle);">/</span>
+              <a href="mailto:dhirwansuhani0@gmail.com" class="hero-social-link">dhirwansuhani0@gmail.com ↗</a>
+            </div>
+          </div>
+
+          <!-- Right Column: User's Photo (Blends seamlessly into the dark background) -->
+          <div class="hero-image-column">
+            <div class="portrait-ambient-glow"></div>
+            
+            <div class="portrait-frame" id="portraitFrame">
+              <img 
+                src="assets/images/suhani.jpg" 
+                alt="Portrait of Suhani Dhirwan - Applied Art Student & Visual Artist" 
+                class="portrait-img-element"
+                id="heroPortraitImg"
+              />
+
+              <!-- Floating Experience Badge -->
+              <div class="hero-floating-badge">
+                <div class="floating-badge-icon">🎨</div>
+                <div class="floating-badge-text">
+                  <strong>BFA Applied Art</strong>
+                  <span>Graphic Era Hill University</span>
+                </div>
+              </div>
+
+              <!-- Interactive Monochrome / Color Toggle -->
+              <button class="portrait-mode-toggle" id="portraitToggleBtn" aria-label="Toggle portrait color mode">
+                <span class="toggle-icon">◐</span>
+                <span>B&W Mode</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         MARQUEE TICKER BANNER
+         ========================================================================== -->
+    <div class="marquee-section" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-item">Drawing & Sketching <span class="marquee-separator">•</span></div>
+        <div class="marquee-item">Painting & Colour Theory <span class="marquee-separator">•</span></div>
+        <div class="marquee-item">Graphic Design & Layout <span class="marquee-separator">•</span></div>
+        <div class="marquee-item">Applied Art Specialisation <span class="marquee-separator">•</span></div>
+        <div class="marquee-item">Packaging & Product Design <span class="marquee-separator">•</span></div>
+        <div class="marquee-item">Poster & Visual Communication <span class="marquee-separator">•</span></div>
+        <div class="marquee-item">Illustration & Visual Storytelling <span class="marquee-separator">•</span></div>
+        
+        <!-- Duplicate for infinite seamless scroll -->
+        <div class="marquee-item">Drawing & Sketching <span class="marquee-separator">•</span></div>
+        <div class="marquee-item">Painting & Colour Theory <span class="marquee-separator">•</span></div>
+        <div class="marquee-item">Graphic Design & Layout <span class="marquee-separator">•</span></div>
+        <div class="marquee-item">Applied Art Specialisation <span class="marquee-separator">•</span></div>
+        <div class="marquee-item">Packaging & Product Design <span class="marquee-separator">•</span></div>
+        <div class="marquee-item">Poster & Visual Communication <span class="marquee-separator">•</span></div>
+        <div class="marquee-item">Illustration & Visual Storytelling <span class="marquee-separator">•</span></div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         ABOUT ME SECTION (From Netlify Portfolio)
+         ========================================================================== -->
+    <section class="section-padding" id="about">
+      <div class="container">
+        
+        <div class="section-header reveal-fade-up">
+          <span class="section-tag">01 // About Me</span>
+          <h2 class="section-title">A little introduction to the artist behind the work.</h2>
+          <p class="section-subtitle">Dedicated to mastering the dialogue between traditional art, visual design, and emotional communication.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Left: Narrative -->
+          <div class="about-narrative reveal-fade-up">
+            <p>
+              <strong style="color: #ffffff; font-size: 1.25rem;">Hello! I'm Suhani.</strong><br>
+              I'm a <span class="highlight-text">BFA student specialising in Applied Art at Graphic Era Hill University, Dehradun</span>. I enjoy experimenting with design, drawing, painting, and visual ideas. As a student, I'm continuously learning new techniques and developing my creative style.
+            </p>
+            <p>
+              My goal is to grow as a creative designer, make meaningful visual work, and keep learning through projects, class activities, and new experiences. Whether through traditional mediums or digital tools, I love transforming abstract thoughts into tangible art.
+            </p>
+
+            <div class="interests-container">
+              <div class="interests-label">Creative Passions & Focus Areas</div>
+              <div class="interests-pills">
+                <span class="interest-pill">✏️ Drawing & Sketching</span>
+                <span class="interest-pill">🎨 Painting & Colour</span>
+                <span class="interest-pill">📐 Graphic Design & Layout</span>
+                <span class="interest-pill">📦 Packaging & Branding</span>
+                <span class="interest-pill">🖼️ Canvas Fine Art</span>
+                <span class="interest-pill">💡 Visual Storytelling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Metrics / Stats Grid with Counter Animations -->
+          <div class="about-stats-grid">
+            <div class="stat-card reveal-fade-up delay-100">
+              <div class="stat-number" data-count="3">0<span class="stat-suffix">rd Year</span></div>
+              <div class="stat-label">BFA Applied Art Student • Graphic Era Hill University</div>
+            </div>
+
+            <div class="stat-card reveal-fade-up delay-200">
+              <div class="stat-number" data-count="6">0<span class="stat-suffix">+</span></div>
+              <div class="stat-label">Featured Studio Projects & Artistic Disciplines</div>
+            </div>
+
+            <div class="stat-card reveal-fade-up delay-300">
+              <div class="stat-number" data-count="100">0<span class="stat-suffix">%</span></div>
+              <div class="stat-label">Dedication to Creative Exploration & Visual Growth</div>
+            </div>
+
+            <div class="stat-card reveal-fade-up delay-400">
+              <div class="stat-number" data-count="4">0<span class="stat-suffix">+</span></div>
+              <div class="stat-label">Key University Activities, Certifications & Exhibitions</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SKILLS & TOOLS (From Netlify Portfolio)
+         ========================================================================== -->
+    <section class="section-padding" id="skills" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        
+        <div class="section-header reveal-fade-up">
+          <span class="section-tag">02 // Skills & Tools</span>
+          <h2 class="section-title">Creative skills I'm developing and the tools I explore.</h2>
+          <p class="section-subtitle">Bridging fine art foundations with contemporary visual communication techniques.</p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Skill 1 -->
+          <div class="service-card reveal-fade-up delay-100">
+            <div class="service-icon-box">✏️</div>
+            <h3 class="service-title">Drawing & Sketching</h3>
+            <p class="service-desc">
+              Observational drawing, rough sketches, anatomical studies, and spontaneous visual ideation across ink, pencil, and charcoal.
+            </p>
+            <ul class="service-points">
+              <li class="service-point">Observational & Freehand Drawing</li>
+              <li class="service-point">Perspective & Rough Thumbnails</li>
+              <li class="service-point">Character & Object Expression</li>
+            </ul>
+          </div>
+
+          <!-- Skill 2 -->
+          <div class="service-card reveal-fade-up delay-200">
+            <div class="service-icon-box">🎨</div>
+            <h3 class="service-title">Painting & Colour</h3>
+            <p class="service-desc">
+              Colour combinations, chromatic harmony, composition, and handmade artwork spanning acrylics, gouache, watercolors, and canvas.
+            </p>
+            <ul class="service-points">
+              <li class="service-point">Colour Wheel & Contrast Theory</li>
+              <li class="service-point">Handmade Canvas Compositions</li>
+              <li class="service-point">Acrylic & Mixed Media Techniques</li>
+            </ul>
+          </div>
+
+          <!-- Skill 3 -->
+          <div class="service-card reveal-fade-up delay-300">
+            <div class="service-icon-box">📐</div>
+            <h3 class="service-title">Graphic Design & Applied Art</h3>
+            <p class="service-desc">
+              Layout, typography, visual communication, packaging dielines, and advertising concepts engineered for commercial impact.
+            </p>
+            <ul class="service-points">
+              <li class="service-point">Layout & Typographic Hierarchy</li>
+              <li class="service-point">Packaging & Structural Design</li>
+              <li class="service-point">Poster & Visual Communication</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Tools Grid -->
+        <div class="skills-wrapper reveal-fade-up" style="margin-top: 2.5rem;">
+          <div class="skills-categories-grid">
+            
+            <div class="skill-category-col">
+              <h3 class="skill-category-title"><span>🎨</span> Fine Art Mediums</h3>
+              <div class="skills-tags-list">
+                <span class="skill-pill">Canvas Painting</span>
+                <span class="skill-pill">Acrylic Colors</span>
+                <span class="skill-pill">Watercolors</span>
+                <span class="skill-pill">Charcoal & Ink</span>
+                <span class="skill-pill">Handmade Artwork</span>
+              </div>
+            </div>
+
+            <div class="skill-category-col">
+              <h3 class="skill-category-title"><span>💻</span> Digital & Design Tools</h3>
+              <div class="skills-tags-list">
+                <span class="skill-pill">Adobe Photoshop</span>
+                <span class="skill-pill">Adobe Illustrator</span>
+                <span class="skill-pill">Digital Illustration</span>
+                <span class="skill-pill">Canva</span>
+                <span class="skill-pill">Figma Basics</span>
+              </div>
+            </div>
+
+            <div class="skill-category-col">
+              <h3 class="skill-category-title"><span>💡</span> Applied Concepts</h3>
+              <div class="skills-tags-list">
+                <span class="skill-pill">Visual Storytelling</span>
+                <span class="skill-pill">Packaging Design</span>
+                <span class="skill-pill">Poster Design</span>
+                <span class="skill-pill">Composition Balance</span>
+                <span class="skill-pill">Conceptual Ideation</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED PROJECTS (From Netlify Portfolio)
+         ========================================================================== -->
+    <section class="section-padding" id="projects">
+      <div class="container">
+        
+        <div class="section-header reveal-fade-up">
+          <span class="section-tag">03 // Featured Projects</span>
+          <h2 class="section-title">Artwork, design assignments and personal experiments.</h2>
+          <p class="section-subtitle">Click on any project card to view the creative process, details, and artwork links.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="work-filters reveal-fade-up">
+          <button class="filter-btn active" data-filter="all">All Work</button>
+          <button class="filter-btn" data-filter="drawing">Illustration / Drawing</button>
+          <button class="filter-btn" data-filter="design">Packaging & Design</button>
+          <button class="filter-btn" data-filter="painting">Painting & Fine Art</button>
+          <button class="filter-btn" data-filter="concept">Concept & Typography</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- Project 1: Illustration / Drawing (Has Google Drive Link) -->
+          <article class="project-card reveal-fade-up delay-100" data-project-id="illustration" data-category="drawing" data-category-tags="drawing,concept">
+            <div class="project-media-wrapper">
+              <span class="project-overlay-badge">Drive Artwork</span>
+              <div class="project-preview-visual" style="background: radial-gradient(circle at 50% 50%, #2a2228 0%, #0d0b0d 100%);">
+                <svg width="280" height="170" viewBox="0 0 280 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Sketch canvas -->
+                  <rect x="40" y="20" width="200" height="130" rx="6" fill="#181417" stroke="#3d2c37" stroke-width="1.5"/>
+                  <!-- Illustration outline -->
+                  <path d="M 80 115 C 85 75, 120 40, 140 40 C 160 40, 195 75, 200 115" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="140" cy="72" r="18" stroke="#f472b6" stroke-width="1.5"/>
+                  <path d="M 125 125 C 135 110, 145 110, 155 125" stroke="#ffffff" stroke-width="1.5"/>
+                  <line x1="95" y1="135" x2="185" y2="135" stroke="#4a3744" stroke-width="2"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="project-tag">Illustration</span>
+                <span class="project-tag">•</span>
+                <span class="project-tag">Observational</span>
+                <span class="project-tag">•</span>
+                <span class="project-tag">Drawing</span>
+              </div>
+              <h3 class="project-title">
+                Project One: Illustration / Drawing
+                <span class="project-title-icon">↗</span>
+              </h3>
+              <p class="project-description">
+                Observational study and intricate freehand drawing exploring line weight, shading gradations, and expressive human and object figures.
+              </p>
+              <div class="project-footer">
+                <span class="project-meta-role">Google Drive Artwork Link Included</span>
+                <span class="project-view-btn">View Artwork & Details →</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Packaging / Product Design -->
+          <article class="project-card reveal-fade-up delay-200" data-project-id="packaging" data-category="design" data-category-tags="design">
+            <div class="project-media-wrapper">
+              <span class="project-overlay-badge">Applied Art</span>
+              <div class="project-preview-visual" style="background: radial-gradient(circle at 50% 50%, #20262b 0%, #0c1013 100%);">
+                <svg width="280" height="170" viewBox="0 0 280 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- 3D Box mockup -->
+                  <polygon points="140,30 200,60 140,90 80,60" fill="#1b242a" stroke="#3c525f" stroke-width="1.5"/>
+                  <polygon points="80,60 140,90 140,145 80,115" fill="#121a1f" stroke="#3c525f" stroke-width="1.5"/>
+                  <polygon points="140,90 200,60 200,115 140,145" fill="#182128" stroke="#3c525f" stroke-width="1.5"/>
+                  <!-- Label on box front -->
+                  <line x1="95" y1="92" x2="125" y2="107" stroke="#38bdf8" stroke-width="2"/>
+                  <line x1="95" y1="102" x2="115" y2="112" stroke="#64748b" stroke-width="1.5"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="project-tag">Packaging</span>
+                <span class="project-tag">•</span>
+                <span class="project-tag">Product Design</span>
+                <span class="project-tag">•</span>
+                <span class="project-tag">Branding</span>
+              </div>
+              <h3 class="project-title">
+                Project Two: Packaging & Product Design
+                <span class="project-title-icon">↗</span>
+              </h3>
+              <p class="project-description">
+                Commercial packaging concept exploring dieline structure, label typography, and shelf presence developed during Applied Art coursework.
+              </p>
+              <div class="project-footer">
+                <span class="project-meta-role">Product Design Assignment</span>
+                <span class="project-view-btn">View Details →</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Poster / Visual Communication -->
+          <article class="project-card reveal-fade-up delay-100" data-project-id="poster" data-category="design" data-category-tags="design,concept">
+            <div class="project-media-wrapper">
+              <span class="project-overlay-badge">Poster Design</span>
+              <div class="project-preview-visual" style="background: radial-gradient(circle at 50% 50%, #2a2020 0%, #0f0a0a 100%);">
+                <svg width="280" height="170" viewBox="0 0 280 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Poster Frame -->
+                  <rect x="80" y="15" width="120" height="140" rx="4" fill="#191111" stroke="#482d2d" stroke-width="1.5"/>
+                  <!-- Poster art -->
+                  <rect x="92" y="28" width="96" height="40" rx="2" fill="#ef4444" opacity="0.8"/>
+                  <rect x="92" y="76" width="70" height="6" rx="2" fill="#ffffff"/>
+                  <rect x="92" y="88" width="85" height="4" rx="2" fill="#694040"/>
+                  <rect x="92" y="96" width="60" height="4" rx="2" fill="#694040"/>
+                  <circle cx="175" cy="125" r="10" fill="#f87171"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="project-tag">Poster</span>
+                <span class="project-tag">•</span>
+                <span class="project-tag">Visual Communication</span>
+                <span class="project-tag">•</span>
+                <span class="project-tag">Impact</span>
+              </div>
+              <h3 class="project-title">
+                Project Three: Poster / Visual Communication
+                <span class="project-title-icon">↗</span>
+              </h3>
+              <p class="project-description">
+                Bold visual communication poster balancing high visual contrast, poignant metaphor, and urgent typography for social engagement.
+              </p>
+              <div class="project-footer">
+                <span class="project-meta-role">Visual Communication</span>
+                <span class="project-view-btn">View Details →</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Typography / Layout -->
+          <article class="project-card reveal-fade-up delay-200" data-project-id="typography" data-category="concept" data-category-tags="concept,design">
+            <div class="project-media-wrapper">
+              <span class="project-overlay-badge">Typography</span>
+              <div class="project-preview-visual" style="background: radial-gradient(circle at 50% 50%, #242220 0%, #0d0c0b 100%);">
+                <svg width="280" height="170" viewBox="0 0 280 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <text x="60" y="95" font-family="serif" font-size="64" fill="#ffffff" opacity="0.85">Aa</text>
+                  <text x="145" y="70" font-family="sans-serif" font-size="14" font-weight="bold" fill="#f59e0b">TYPO</text>
+                  <line x1="145" y1="78" x2="215" y2="78" stroke="#4a3e35" stroke-width="2"/>
+                  <rect x="145" y="86" width="65" height="4" rx="2" fill="#4a3e35"/>
+                  <rect x="145" y="96" width="55" height="4" rx="2" fill="#4a3e35"/>
+                  <rect x="145" y="106" width="70" height="4" rx="2" fill="#4a3e35"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="project-tag">Typography</span>
+                <span class="project-tag">•</span>
+                <span class="project-tag">Layout</span>
+                <span class="project-tag">•</span>
+                <span class="project-tag">Grid System</span>
+              </div>
+              <h3 class="project-title">
+                Project Four: Typography / Layout
+                <span class="project-title-icon">↗</span>
+              </h3>
+              <p class="project-description">
+                Experimental editorial typography exploring letterform anatomy, negative space, hierarchy, and harmonious multi-column print balance.
+              </p>
+              <div class="project-footer">
+                <span class="project-meta-role">Layout & Publication Design</span>
+                <span class="project-view-btn">View Details →</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Painting & Canvas Fine Art (Graphic Era Hospital) -->
+          <article class="project-card reveal-fade-up delay-100" data-project-id="hospital" data-category="painting" data-category-tags="painting">
+            <div class="project-media-wrapper">
+              <span class="project-overlay-badge">Hospital Painting</span>
+              <div class="project-preview-visual" style="background: radial-gradient(circle at 50% 50%, #1c2622 0%, #0b110f 100%);">
+                <svg width="280" height="170" viewBox="0 0 280 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Easel & Canvas -->
+                  <polygon points="140,25 140,15 136,15 136,25" fill="#4a3828"/>
+                  <rect x="60" y="25" width="160" height="105" rx="3" fill="#161f1c" stroke="#2d4239" stroke-width="2"/>
+                  <!-- Gentle peaceful landscape painting -->
+                  <circle cx="140" cy="65" r="22" fill="#fef08a" opacity="0.6"/>
+                  <path d="M 62 105 Q 100 80, 140 100 T 218 95 L 218 128 L 62 128 Z" fill="#10b981" opacity="0.7"/>
+                  <path d="M 62 118 Q 110 105, 160 115 T 218 112 L 218 128 L 62 128 Z" fill="#047857"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="project-tag">Canvas Painting</span>
+                <span class="project-tag">•</span>
+                <span class="project-tag">Fine Art</span>
+                <span class="project-tag">•</span>
+                <span class="project-tag">Hospital Installation</span>
+              </div>
+              <h3 class="project-title">
+                Project Five: Painting / Fine Art
+                <span class="project-title-icon">↗</span>
+              </h3>
+              <p class="project-description">
+                Handmade canvas painting created for Graphic Era Hospital, focusing on serene compositions and restorative chromatic harmonies for healing spaces.
+              </p>
+              <div class="project-footer">
+                <span class="project-meta-role">Commissioned Canvas Work</span>
+                <span class="project-view-btn">View Details →</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Creative Concept & Visual Storytelling -->
+          <article class="project-card reveal-fade-up delay-200" data-project-id="concept" data-category="concept" data-category-tags="concept,drawing">
+            <div class="project-media-wrapper">
+              <span class="project-overlay-badge">Storytelling</span>
+              <div class="project-preview-visual" style="background: radial-gradient(circle at 50% 50%, #241e2a 0%, #0d0a11 100%);">
+                <svg width="280" height="170" viewBox="0 0 280 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Storyboard frames -->
+                  <rect x="40" y="30" width="60" height="45" rx="3" fill="#17121b" stroke="#3b2b45"/>
+                  <circle cx="70" cy="52" r="10" stroke="#c084fc" stroke-width="1.5"/>
+                  
+                  <rect x="110" y="30" width="60" height="45" rx="3" fill="#17121b" stroke="#3b2b45"/>
+                  <path d="M 125 62 L 140 45 L 155 62" stroke="#c084fc" stroke-width="1.5"/>
+
+                  <rect x="180" y="30" width="60" height="45" rx="3" fill="#17121b" stroke="#3b2b45"/>
+                  <circle cx="210" cy="52" r="6" fill="#a855f7"/>
+
+                  <!-- Storyline script lines below -->
+                  <rect x="50" y="95" width="180" height="6" rx="3" fill="#32223c"/>
+                  <rect x="50" y="110" width="140" height="6" rx="3" fill="#32223c"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="project-tag">Storytelling</span>
+                <span class="project-tag">•</span>
+                <span class="project-tag">Visual Narrative</span>
+                <span class="project-tag">•</span>
+                <span class="project-tag">Creative Ideas</span>
+              </div>
+              <h3 class="project-title">
+                Project Six: Creative Concept
+                <span class="project-title-icon">↗</span>
+              </h3>
+              <p class="project-description">
+                Narrative visual development exploring thumbnail storyboarding, character expressions, and worldbuilding concepts.
+              </p>
+              <div class="project-footer">
+                <span class="project-meta-role">Visual Storytelling Concept</span>
+                <span class="project-view-btn">View Details →</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ACHIEVEMENTS & CLASS ACTIVITIES (From Netlify Portfolio)
+         ========================================================================== -->
+    <section class="section-padding" id="activities" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        
+        <div class="section-header reveal-fade-up">
+          <span class="section-tag">04 // Activities & Achievements</span>
+          <h2 class="section-title">Participation, college work, certificates & learning experiences.</h2>
+          <p class="section-subtitle">Active involvement across university festivals, community programmes, and academic studio art.</p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Achievement 1 -->
+          <div class="timeline-item reveal-fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">University Recognition</div>
+            <h3 class="timeline-role">Grafest — Petri Plate Activity (Participation)</h3>
+            <div class="timeline-company">Graphic Era Hill University</div>
+            <p class="timeline-description">
+              Participated in the annual university Grafest Petri Plate artistic event, creating intricate miniature visual compositions and exploring scientific-artistic intersections.
+            </p>
+          </div>
+
+          <!-- Achievement 2 -->
+          <div class="timeline-item reveal-fade-up delay-100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Healthcare Artwork Display</div>
+            <h3 class="timeline-role">Canvas Painting for Graphic Era Hospital</h3>
+            <div class="timeline-company">Graphic Era Hospital & Medical Centre</div>
+            <p class="timeline-description">
+              Created original canvas paintings displayed in Graphic Era Hospital to foster soothing, warm visual environments for patients, doctors, and visitors.
+            </p>
+          </div>
+
+          <!-- Achievement 3 -->
+          <div class="timeline-item reveal-fade-up delay-200">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">National Initiative</div>
+            <h3 class="timeline-role">Pariksha Pe Charcha — School Participation</h3>
+            <div class="timeline-company">National Creative & Academic Initiative</div>
+            <p class="timeline-description">
+              Selected participant in Pariksha Pe Charcha, engaging in youth dialogues around education, stress-free creative learning, and holistic self-development.
+            </p>
+          </div>
+
+          <!-- Achievement 4 -->
+          <div class="timeline-item reveal-fade-up delay-300">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Community & Awareness</div>
+            <h3 class="timeline-role">Gender Sensitization & Legal Awareness Programme</h3>
+            <div class="timeline-company">Graphic Era Hill University</div>
+            <p class="timeline-description">
+              Active participant in legal rights and gender sensitization workshops, creating supportive visual communication campaigns and discussion forums.
+            </p>
+          </div>
+
+          <!-- Certificate Action -->
+          <div style="padding-left: 60px; margin-top: 2rem;">
+            <a href="https://drive.google.com/file/d/1skkXXWYB6b9PRFnkpFz6WrKFvFVFgU-R/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="hero-secondary-btn" style="display: inline-flex;">
+              <span>✦ View All Certificates on Google Drive</span>
+              <span>↗</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION (From Netlify Portfolio: dhirwansuhani0@gmail.com)
+         ========================================================================== -->
+    <section class="section-padding contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header reveal-fade-up">
+          <span class="section-tag">05 // Get In Touch</span>
+          <h2 class="section-title">Have an idea? Let's talk.</h2>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Left: Direct Info & Social Links from Netlify Site -->
+          <div class="contact-left-info reveal-fade-up">
+            <p class="contact-hero-statement">
+              I'm happy to connect about art, design, learning opportunities and creative collaborations.
+            </p>
+            <p class="contact-subtext">
+              Whether you want to discuss visual storytelling, collaborate on an art project, or review my academic work, feel free to drop a message!
+            </p>
+
+            <div class="contact-direct-card">
+              <div>
+                <div class="direct-email-label">Email Address</div>
+                <div class="direct-email-val">dhirwansuhani0@gmail.com</div>
+              </div>
+              <button class="btn-copy-email" data-email="dhirwansuhani0@gmail.com" aria-label="Copy email address to clipboard">Copy</button>
+            </div>
+
+            <!-- Direct Links from Netlify -->
+            <div style="display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 2rem;">
+              <a href="https://www.linkedin.com/in/suhani-dhirwan-363295323" target="_blank" rel="noopener noreferrer" class="hero-secondary-btn" style="width: fit-content;">
+                <span>LinkedIn Profile</span>
+                <span>↗</span>
+              </a>
+              <a href="https://drive.google.com/file/d/165MOUhLqwBdlDkNQ_263efK2kBZdy2E5/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="hero-secondary-btn" style="width: fit-content;">
+                <span>Google Drive Project Artwork</span>
+                <span>↗</span>
+              </a>
+              <a href="https://drive.google.com/file/d/1skkXXWYB6b9PRFnkpFz6WrKFvFVFgU-R/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="hero-secondary-btn" style="width: fit-content;">
+                <span>Google Drive Certificates</span>
+                <span>↗</span>
+              </a>
+            </div>
+
+            <div class="contact-meta-row">
+              <div class="meta-item">
+                <span class="status-pulse"></span>
+                <span>Graphic Era Hill University, Dehradun</span>
+              </div>
+              <div class="meta-item">
+                <span>🕒</span>
+                <span class="live-local-time">--:-- IST • Dehradun</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-card reveal-fade-up delay-200">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="contactName" class="form-label">Your Name *</label>
+                <input type="text" id="contactName" name="name" class="form-control" placeholder="Enter your name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Your Email *</label>
+                <input type="email" id="contactEmail" name="email" class="form-control" placeholder="your.email@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactType" class="form-label">Inquiry / Topic</label>
+                <input type="text" id="contactType" name="type" class="form-control" placeholder="Art collaboration, design project, or opportunity">
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Your Message *</label>
+                <textarea id="contactMessage" name="message" class="form-control" placeholder="Hello Suhani, I came across your portfolio and would love to connect..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-form-submit">
+                <span>Send Message</span>
+                <span>→</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <p>© 2026 Suhani Dhirwan. BFA Applied Art • Graphic Era Hill University, Dehradun.</p>
+      </div>
+      <div>
+        <a href="#hero" class="footer-back-to-top">
+          <span>Back to Top</span>
+          <span>↑</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       PROJECT CASE STUDY MODAL DIALOG
+       ========================================================================== -->
+  <div class="project-modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">✕</button>
+      
+      <div class="modal-hero-cover">
+        <svg width="120" height="80" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="60" cy="40" r="28" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4"/>
+          <circle cx="60" cy="40" r="14" fill="#ffffff" opacity="0.1"/>
+          <path d="M 50 40 L 70 40 M 60 30 L 60 50" stroke="#ffffff" stroke-width="2"/>
+        </svg>
+      </div>
+
+      <div class="modal-body">
+        <h2 class="modal-title">Case Study</h2>
+        <div class="modal-subtitle">Project Subtitle</div>
+
+        <div class="modal-meta-grid">
+          <div class="modal-meta-item">
+            <label>Discipline</label>
+            <span class="modal-role-val">Applied Art</span>
+          </div>
+          <div class="modal-meta-item">
+            <label>Category</label>
+            <span class="modal-year-val">Illustration / Drawing</span>
+          </div>
+          <div class="modal-meta-item">
+            <label>Specialisation</label>
+            <span class="modal-time-val">Applied Art</span>
+          </div>
+          <div class="modal-meta-item">
+            <label>Institution</label>
+            <span class="modal-client-val">Graphic Era Hill University</span>
+          </div>
+        </div>
+
+        <h3 class="modal-section-h3">Overview & Concept</h3>
+        <p class="modal-overview-text">Loading...</p>
+
+        <h3 class="modal-section-h3">The Creative Challenge</h3>
+        <p class="modal-problem-text">Loading...</p>
+
+        <h3 class="modal-section-h3">Artistic Execution & Technique</h3>
+        <p class="modal-solution-text">Loading...</p>
+
+        <h3 class="modal-section-h3">Impact & Learning Outcome</h3>
+        <p class="modal-impact-text">Loading...</p>
+
+        <div style="margin-top: 2rem;">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="hero-secondary-btn modal-drive-link" style="display: inline-flex;">
+            <span>View Project Link ↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Feedback -->
+  <div class="toast-notice" id="toastNotice">
+    <span>✓</span>
+    <span>Notification message</span>
+  </div>
+
+  <!-- Main Application Script (Native Smooth & Snappy, Zero Lag) -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
