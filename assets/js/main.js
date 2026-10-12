@@ -2,7 +2,8 @@
  * SUHANI DHIRWAN PORTFOLIO - FAST INTERACTIONS & SCROLL ANIMATIONS
  * BFA Applied Art Student • Graphic Era Hill University, Dehradun
  * 
- * Clean, lightweight, native-speed scrolling with zero sluggishness.
+ * Clean, lightweight, native-speed scrolling with real projects and
+ * direct certificate lightbox modal (zero Google Drive redirects).
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initStatsCounter();
   initProjectFilters();
   initProjectModal();
+  initCertificateModal();
   initContactForm();
   initCopyEmail();
   initMobileNav();
@@ -64,8 +66,8 @@ function initHeroRoleRotator() {
   const roles = [
     "Applied Art & Visual Storytelling",
     "BFA • Graphic Era Hill University",
-    "Illustration, Painting & Sketching",
-    "Graphic Design & Typography"
+    "Traditional & Canvas Fine Art",
+    "Graphic Design & Corporate Identity"
   ];
 
   let currentIndex = 0;
@@ -241,77 +243,78 @@ function initProjectFilters() {
 }
 
 /* --------------------------------------------------------------------------
- * 8. REAL PROJECT CASE STUDY MODAL DETAILS (From Netlify Portfolio)
+ * 8. REAL PROJECT CASE STUDY DETAILS
  * -------------------------------------------------------------------------- */
 const projectDetails = {
-  illustration: {
-    title: "Project One: Illustration & Drawing",
-    subtitle: "Observational Study, Fine Linework & Visual Expression",
-    category: "Illustration / Drawing",
-    discipline: "Applied Art & Freehand",
-    institution: "Graphic Era Hill University, Dehradun",
-    driveUrl: "https://drive.google.com/file/d/165MOUhLqwBdlDkNQ_263efK2kBZdy2E5/view?usp=drivesdk",
-    overview: "A comprehensive freehand and observational drawing project exploring anatomical proportion, delicate ink linework, and expressive rendering. Developed as part of coursework at Graphic Era Hill University.",
-    problem: "Capturing organic depth and visual tension through traditional drawing while developing a unique signature illustration aesthetic.",
-    solution: "Used fine-tip drawing mediums, tonal value gradations, and dynamic character perspective to convey emotion and visual rhythm.",
-    impact: "Featured in class exhibitions and archived in the artist's foundational portfolio."
-  },
-  packaging: {
-    title: "Project Two: Packaging & Product Design",
-    subtitle: "Visual Identity, Box Architecture & Shelf Appeal",
-    category: "Packaging / Product Design",
-    discipline: "Commercial Applied Art",
-    institution: "Graphic Era Hill University, Dehradun",
-    driveUrl: "https://starlit-cupcake-7231fd.netlify.app/",
-    overview: "A full product packaging exploration incorporating die-cut layout, label typography, cohesive color theory, and material storytelling tailored for consumer delight.",
-    problem: "Designing packaging that communicates product value clearly within a 3-second glance while maintaining aesthetic distinction.",
-    solution: "Drafted structural dielines, harmonious color palettes, and legible typographic hierarchy that balances regulatory details with artistic flair.",
-    impact: "Received high commendations for structural balance and creative branding execution."
-  },
-  poster: {
-    title: "Project Three: Poster & Visual Communication",
-    subtitle: "Public Awareness, Headline Impact & Visual Metaphor",
-    category: "Poster / Visual Communication",
-    discipline: "Graphic Design & Applied Art",
-    institution: "Graphic Era Hill University, Dehradun",
-    driveUrl: "https://starlit-cupcake-7231fd.netlify.app/",
-    overview: "A conceptual poster campaign designed to provoke thought on social awareness, legal rights, and gender sensitization through bold visual contrast.",
-    problem: "Conveying a sensitive social topic with dignity, visual urgency, and instant communicative clarity.",
-    solution: "Employed stark monochrome and vivid accent contrasts, minimalist metaphors, and bold display lettering.",
-    impact: "Aliged with university programmes on Gender Sensitization and Legal Awareness."
-  },
-  typography: {
-    title: "Project Four: Typography & Layout Design",
-    subtitle: "Font Anatomy, Grid Systems & Editorial Composition",
-    category: "Typography / Layout",
-    discipline: "Editorial & Publication Design",
-    institution: "Graphic Era Hill University, Dehradun",
-    driveUrl: "https://starlit-cupcake-7231fd.netlify.app/",
-    overview: "An experimental typographic exploration studying letterform geometry, line spacing, hierarchy, and harmonious print layout dynamics.",
-    problem: "Balancing experimental display letterforms with effortless editorial readability across multi-column formats.",
-    solution: "Constructed modular grid systems, expressive headline treatments, and carefully tuned micro-typographic kerning and leading.",
-    impact: "Created a versatile editorial showcase used in academic critiques."
-  },
-  hospital: {
-    title: "Project Five: Painting & Canvas Fine Art",
-    subtitle: "Commissioned Canvas Painting for Graphic Era Hospital",
+  mountain: {
+    title: "Himalayan Mountain Village — Canvas Painting",
+    subtitle: "Traditional Slate Architecture, Stone Masonry & Mountain Atmosphere",
     category: "Painting / Fine Art",
-    discipline: "Acrylic on Canvas & Mixed Media",
-    institution: "Graphic Era Hospital & GEHU",
-    driveUrl: "https://starlit-cupcake-7231fd.netlify.app/",
-    overview: "An original hand-painted canvas artwork created for the healing environment of Graphic Era Hospital, focusing on serenity, restorative color harmony, and warmth.",
-    problem: "Creating an expansive visual painting that instills calmness, hope, and visual warmth for patients, healthcare workers, and visitors.",
-    solution: "Utilized soft blending strokes, organic botanical themes, and gentle chromatic harmony designed to alleviate clinical stress.",
-    impact: "Displayed within Graphic Era Hospital premises, celebrated by faculty and healthcare visitors."
+    discipline: "Fine Art & Acrylic on Canvas",
+    institution: "Department of Fine Art • Graphic Era Hill University",
+    image: "assets/images/projects/mountain_village_landscape.jpg",
+    overview: "A rich fine art study on canvas exploring the rustic stone-and-timber architectural heritage of Himalayan mountain villages, stepped terrace farms, and deep atmospheric mountain perspective.",
+    problem: "Capturing the organic textures of weathered slate roofs, stone walls, and dynamic depth of terraced valleys using brush layering.",
+    solution: "Employed tonal color harmonies, architectural line work, and textured brushwork to render the earthy tranquility of mountain hamlets.",
+    impact: "Showcased in GEHU academic exhibitions and celebrated for its atmospheric authenticity."
+  },
+  monal: {
+    title: "Himalayan Monal — BFA Studio Artwork",
+    subtitle: "Wildlife Study on Canvas • State Bird of Uttarakhand",
+    category: "Painting / Fine Art",
+    discipline: "Acrylic on Canvas • BFA 1st Semester",
+    institution: "Department of Fine Art • Graphic Era Hill University",
+    image: "assets/images/projects/monal_bird_canvas_painting.jpg",
+    overview: "An acrylic canvas painting of the Himalayan Monal, perched gracefully upon a branch against a luminous emerald background. Created during BFA 1st Semester (Batch 2024–28) at Graphic Era Hill University.",
+    problem: "Translating the iridescent metallic sheen and dynamic plumage colors of the Himalayan Monal onto traditional canvas.",
+    solution: "Layered cobalt blues, warm ochres, and delicate feather linework to achieve lifelike presence and vibrant chromatic contrast.",
+    impact: "Signed studio piece archived in university portfolio (Batch 2024–28, Department of Fine Art, GEHU)."
+  },
+  stationery: {
+    title: "MakeMyTrip Corporate Stationery & Business Card Design",
+    subtitle: "Executive Identity, Visiting Card & Architectural Envelope System",
+    category: "Packaging / Product Design",
+    discipline: "Commercial Applied Art & Corporate Identity",
+    institution: "Graphic Era Hill University • Applied Art",
+    image: "assets/images/projects/makemytrip_stationery.png",
+    overview: "A comprehensive brand stationery system designed for MakeMyTrip, featuring modern business visiting cards, corporate envelopes, and clean contact information layouts.",
+    problem: "Aligning playful travel spirit with executive professionalism and balanced print margins.",
+    solution: "Combined MakeMyTrip's iconic red/blue identity with delicate architectural city skyline silhouettes and crisp grid hierarchy.",
+    impact: "Exemplary commercial identity project in Applied Art coursework."
+  },
+  letterhead: {
+    title: "MakeMyTrip Official Letterhead & Paris Skyline Art",
+    subtitle: "Vector Architectural Skyline Illustration & Corporate Layout",
+    category: "Graphic Design / Layout",
+    discipline: "Graphic Design & Vector Illustration",
+    institution: "Graphic Era Hill University • Applied Art",
+    image: "assets/images/projects/makemytrip_letterhead.png",
+    overview: "An official corporate letterhead featuring detailed vector silhouette illustrations of world monuments (Eiffel Tower, Arc de Triomphe, Notre Dame) along the lower margin.",
+    problem: "Maintaining adequate blank writing space while incorporating rich, evocative travel art.",
+    solution: "Used fine-line monochrome vector city silhouettes at the footer to ensure maximum document utility and brand delight.",
+    impact: "High commendation for print usability and typographic restraint."
+  },
+  illustration: {
+    title: "Observational Illustration & Anatomy Drawing",
+    subtitle: "Freehand Linework, Value Studies & Gesture Expression",
+    category: "Illustration / Drawing",
+    discipline: "Applied Art & Freehand Linework",
+    institution: "Graphic Era Hill University, Dehradun",
+    image: "assets/images/projects/mountain_village_landscape.jpg",
+    driveUrl: "https://drive.google.com/file/d/165MOUhLqwBdlDkNQ_263efK2kBZdy2E5/view?usp=drivesdk",
+    overview: "A comprehensive freehand and observational drawing project exploring anatomical proportion, delicate ink linework, and expressive rendering.",
+    problem: "Capturing organic depth and visual tension through traditional drawing while developing a signature illustration aesthetic.",
+    solution: "Used fine-tip drawing mediums, tonal value gradations, and dynamic character perspective to convey emotion and visual rhythm.",
+    impact: "Featured in class exhibitions and archived in foundational portfolio."
   },
   concept: {
-    title: "Project Six: Creative Concept & Storytelling",
-    subtitle: "Character Explorations, Worldbuilding & Visual Lore",
+    title: "Visual Storytelling & Narrative Concept Art",
+    subtitle: "Thumbnail Storyboarding, Character Expressions & Lore",
     category: "Creative Concept / Narrative",
     discipline: "Storyboarding & Visual Ideas",
     institution: "Graphic Era Hill University, Dehradun",
-    driveUrl: "https://starlit-cupcake-7231fd.netlify.app/",
-    overview: "A narrative series exploring mood boards, thumbnail storyboards, and expressive visual character concepts.",
+    image: "assets/images/projects/monal_bird_canvas_painting.jpg",
+    overview: "A narrative series exploring mood boards, thumbnail storyboards, and expressive visual character concepts for creative storytelling.",
     problem: "Developing an engaging visual storytelling sequence from an initial abstract prompt.",
     solution: "Iterated through dozens of thumbnail sketches, focal point studies, and color mood keys to establish an evocative world.",
     impact: "Demonstrated strong creative versatility across traditional and applied art disciplines."
@@ -352,8 +355,13 @@ function initProjectModal() {
     modalImpact.textContent = data.impact;
 
     if (modalLink) {
-      modalLink.href = data.driveUrl;
-      modalLink.textContent = data.driveUrl.includes('drive.google.com') ? 'Open Drive Artwork ↗' : 'View Project Details ↗';
+      if (data.driveUrl) {
+        modalLink.href = data.driveUrl;
+        modalLink.textContent = 'View Drive Artwork Link ↗';
+        modalLink.style.display = 'inline-flex';
+      } else {
+        modalLink.style.display = 'none';
+      }
     }
 
     modalBackdrop.classList.add('open');
@@ -388,7 +396,145 @@ function initProjectModal() {
 }
 
 /* --------------------------------------------------------------------------
- * 9. CONTACT FORM WITH INSTANT VALIDATION & TOAST
+ * 9. INTERACTIVE CERTIFICATES LIGHTBOX MODAL (Direct View, Zero Google Drive)
+ * -------------------------------------------------------------------------- */
+const certificateList = [
+  {
+    title: "Grafest 2025: Petri Plate Art",
+    issuer: "Graphic Era (Deemed to be University), Dehradun",
+    date: "May 01 — 03, 2025",
+    desc: "Certificate of Participation for actively participating in Petri Plate Art during Grafest 2025, one of India's biggest inter-university techno-cultural festivals, organized by Graphic Era (Deemed to be University), Dehradun.",
+    webImg: "assets/images/certificates/cert_1_grafest_web.jpg",
+    fullImg: "assets/images/certificates/cert_1_grafest.png",
+    tag: "Grafest 2025"
+  },
+  {
+    title: "Pariksha Pe Charcha 2023",
+    issuer: "Hon'ble Prime Minister Narendra Modi • Government of India",
+    date: "April 20, 2023",
+    desc: "Official letter of appreciation and commendation from Prime Minister Narendra Modi honoring Suhani for participating in Pariksha Pe Charcha and sharing thoughtful youth perspectives on learning and creative development.",
+    webImg: "assets/images/certificates/cert_2_pariksha_pe_charcha_web.jpg",
+    fullImg: "assets/images/certificates/cert_2_pariksha_pe_charcha.png",
+    tag: "Prime Minister Letter"
+  },
+  {
+    title: "Gender Sensitization & Legal Awareness Competition",
+    issuer: "PM Shri Kendriya Vidyalaya IIP, Dehradun & National Commission for Women",
+    date: "December 13, 2023",
+    desc: "Certificate of Merit awarded to Suhani (Class XII B) for participating in the Gender Sensitization and Legal Awareness Competition organized under the aegis of the National Commission for Women in the Vidyalaya.",
+    webImg: "assets/images/certificates/cert_3_gender_sensitization_web.jpg",
+    fullImg: "assets/images/certificates/cert_3_gender_sensitization.png",
+    tag: "National Commission for Women"
+  },
+  {
+    title: "Background Design — Landscapes and Environments",
+    issuer: "Udemy • Instructor: Siobhan Twomey",
+    date: "January 31, 2025",
+    desc: "Certificate of Completion for Background Design - Landscapes and Environments, covering atmospheric perspective, thumbnail compositions, color keys, and environmental concept art.",
+    webImg: "assets/images/certificates/cert_4_udemy_background_design_web.jpg",
+    fullImg: "assets/images/certificates/cert_4_udemy_background_design.png",
+    tag: "Background Design"
+  },
+  {
+    title: "Strategies for Sustainable Design (Elite Certificate)",
+    issuer: "NPTEL • SWAYAM • IIT Hyderabad • Funded by MoE, Govt. of India",
+    date: "January — April 2025",
+    desc: "Elite NPTEL Online Certification awarded to Suhani for successfully completing the 12-week course 'Strategies for Sustainable Design' by Prof. B Umashankar (IIT Hyderabad) with a consolidated score of 65%.",
+    webImg: "assets/images/certificates/cert_5_nptel_sustainable_design_web.jpg",
+    fullImg: "assets/images/certificates/cert_5_nptel_sustainable_design.png",
+    tag: "IIT Hyderabad / NPTEL"
+  }
+];
+
+function initCertificateModal() {
+  const modal = document.querySelector('#certificateModal');
+  if (!modal) return;
+
+  const certImg = modal.querySelector('#certViewerImg');
+  const certTitle = modal.querySelector('#certModalTitle');
+  const certIssuer = modal.querySelector('#certModalIssuer');
+  const certDesc = modal.querySelector('#certModalDesc');
+  const certCounter = modal.querySelector('#certModalCounter');
+  const certFullLink = modal.querySelector('#certFullResLink');
+  const closeBtn = modal.querySelector('#certCloseBtn');
+  const prevBtn = modal.querySelector('#certPrevBtn');
+  const nextBtn = modal.querySelector('#certNextBtn');
+  const tabsContainer = modal.querySelector('#certTabsContainer');
+
+  let currentCertIndex = 0;
+
+  function renderCert(index) {
+    if (index < 0) index = certificateList.length - 1;
+    if (index >= certificateList.length) index = 0;
+    currentCertIndex = index;
+
+    const cert = certificateList[currentCertIndex];
+    certImg.src = cert.webImg;
+    certImg.alt = cert.title;
+    certTitle.textContent = cert.title;
+    certIssuer.textContent = `${cert.issuer} • ${cert.date}`;
+    certDesc.textContent = cert.desc;
+    certCounter.textContent = `Certificate ${currentCertIndex + 1} of ${certificateList.length}`;
+    certFullLink.href = cert.fullImg;
+
+    if (tabsContainer) {
+      const tabs = tabsContainer.querySelectorAll('.cert-tab-pill');
+      tabs.forEach((tab, idx) => {
+        if (idx === currentCertIndex) {
+          tab.classList.add('active');
+        } else {
+          tab.classList.remove('active');
+        }
+      });
+    }
+  }
+
+  window.openCertModal = function(index = 0) {
+    renderCert(index);
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  };
+
+  function closeCertModal() {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  if (closeBtn) closeBtn.addEventListener('click', closeCertModal);
+  if (prevBtn) prevBtn.addEventListener('click', () => renderCert(currentCertIndex - 1));
+  if (nextBtn) nextBtn.addEventListener('click', () => renderCert(currentCertIndex + 1));
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeCertModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (!modal.classList.contains('open')) return;
+    if (e.key === 'Escape') closeCertModal();
+    if (e.key === 'ArrowLeft') renderCert(currentCertIndex - 1);
+    if (e.key === 'ArrowRight') renderCert(currentCertIndex + 1);
+  });
+
+  // Bind click on certificate cards and triggers
+  document.querySelectorAll('[data-cert-index]').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      const idx = parseInt(el.getAttribute('data-cert-index') || '0', 10);
+      window.openCertModal(idx);
+    });
+  });
+
+  // Bind any direct certificate triggers
+  document.querySelectorAll('.trigger-cert-modal').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.openCertModal(0);
+    });
+  });
+}
+
+/* --------------------------------------------------------------------------
+ * 10. CONTACT FORM WITH INSTANT VALIDATION & TOAST
  * -------------------------------------------------------------------------- */
 function showToast(message) {
   let toast = document.querySelector('.toast-notice');
@@ -436,7 +582,7 @@ function initContactForm() {
 }
 
 /* --------------------------------------------------------------------------
- * 10. ONE-CLICK EMAIL COPY
+ * 11. ONE-CLICK EMAIL COPY
  * -------------------------------------------------------------------------- */
 function initCopyEmail() {
   const copyBtn = document.querySelector('.btn-copy-email');
@@ -457,7 +603,7 @@ function initCopyEmail() {
 }
 
 /* --------------------------------------------------------------------------
- * 11. MOBILE NAVIGATION DRAWER
+ * 12. MOBILE NAVIGATION DRAWER
  * -------------------------------------------------------------------------- */
 function initMobileNav() {
   const toggle = document.querySelector('.mobile-toggle');
@@ -490,7 +636,7 @@ function initMobileNav() {
 }
 
 /* --------------------------------------------------------------------------
- * 12. LIVE LOCAL TIME CLOCK (IST)
+ * 13. LIVE LOCAL TIME CLOCK (IST)
  * -------------------------------------------------------------------------- */
 function initLiveClock() {
   const clockEl = document.querySelector('.live-local-time');
