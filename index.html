@@ -112,7 +112,7 @@
               <span style="color: var(--border-subtle);">/</span>
               <a href="https://drive.google.com/file/d/165MOUhLqwBdlDkNQ_263efK2kBZdy2E5/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="hero-social-link">Drive Artwork ↗</a>
               <span style="color: var(--border-subtle);">/</span>
-              <a href="#activities" class="hero-social-link trigger-cert-modal">Certificates (Direct View) ↗</a>
+              <a href="#activities" class="hero-social-link trigger-cert-modal">Certificates ↗</a>
               <span style="color: var(--border-subtle);">/</span>
               <a href="mailto:dhirwansuhani0@gmail.com" class="hero-social-link">dhirwansuhani0@gmail.com ↗</a>
             </div>
@@ -533,6 +533,62 @@
             </div>
           </article>
 
+          <!-- Project 7: Dengler -->
+          <article class="project-card reveal-fade-up delay-200" data-project-id="dengler" data-category="concept" data-category-tags="concept,drawing,design">
+            <div class="project-media-wrapper">
+              <span class="project-overlay-badge">Graphic Design</span>
+              <img src="assets/images/projects/dengler_web.jpg" alt="Dengler Design Project" class="project-media-img" loading="lazy">
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="project-tag">Applied Art</span>
+                <span class="project-tag">•</span>
+                <span class="project-tag">Design</span>
+                <span class="project-tag">•</span>
+                <span class="project-tag">Layout</span>
+              </div>
+              <h3 class="project-title">
+                Dengler — Design Project
+                <span class="project-title-icon">↗</span>
+              </h3>
+              <p class="project-description">
+                A graphic design composition exploring layout structure, typographic hierarchy, and visual communication principles.
+              </p>
+              <div class="project-footer">
+                <span class="project-meta-role">Applied Art & Graphic Design</span>
+                <span class="project-view-btn">View Details →</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 8: Maleficent Book Cover Design -->
+          <article class="project-card reveal-fade-up delay-100" data-project-id="maleficent" data-category="design" data-category-tags="design,concept">
+            <div class="project-media-wrapper">
+              <span class="project-overlay-badge">Book Cover Design</span>
+              <img src="assets/images/projects/maleficent_cover_web.jpg" alt="Maleficent Book Cover Design" class="project-media-img contain-fit" loading="lazy">
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="project-tag">Book Cover</span>
+                <span class="project-tag">•</span>
+                <span class="project-tag">Applied Art</span>
+                <span class="project-tag">•</span>
+                <span class="project-tag">Typography</span>
+              </div>
+              <h3 class="project-title">
+                Maleficent — Book Cover Design
+                <span class="project-title-icon">↗</span>
+              </h3>
+              <p class="project-description">
+                Editorial book jacket design for "The Tale of a Sleeping Beauty", featuring atmospheric villain portraiture, custom gothic typography, and spine layout.
+              </p>
+              <div class="project-footer">
+                <span class="project-meta-role">Cover Design & Layout</span>
+                <span class="project-view-btn">View Details →</span>
+              </div>
+            </div>
+          </article>
+
         </div>
 
       </div>
@@ -596,31 +652,18 @@
             </p>
           </div>
 
-          <!-- Direct Certificate Viewer Action -->
-          <div style="padding-left: 60px; margin-top: 2.5rem; display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap;">
-            <button class="hero-secondary-btn trigger-cert-modal" onclick="openCertModal(0)" style="display: inline-flex; cursor: pointer; background: #ffffff; color: #0a0a0c; font-weight: 700;">
-              <span>✦ Open Interactive Certificate Viewer</span>
-              <span style="font-size: 1.1rem; line-height: 1;">🔍</span>
-            </button>
-            <span style="font-size: 0.85rem; color: var(--text-muted);">Direct instant view • Zero Google Drive links</span>
-          </div>
-
         </div>
 
-        <!-- Verified Certificates Direct Showcase Grid -->
-        <div style="margin-top: 4.5rem;">
+        <!-- Certificates Showcase Grid -->
+        <div style="margin-top: 3.5rem;">
           <div style="text-align: center; margin-bottom: 2.5rem;" class="reveal-fade-up">
-            <span class="section-tag">Direct Certificate Archive</span>
-            <h3 style="font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 800; color: #ffffff; letter-spacing: -0.02em;">Verified Certifications & Recognitions</h3>
-            <p style="color: var(--text-secondary); max-width: 620px; margin: 0.65rem auto 0; font-size: 0.95rem;">
-              Click on any certificate to view the verified document directly in full high resolution.
-            </p>
+            <h3 style="font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 800; color: #ffffff; letter-spacing: -0.02em;">Certifications & Recognitions</h3>
           </div>
 
           <div class="certificates-grid">
             
             <!-- Certificate 1: Grafest 2025 -->
-            <div class="cert-card reveal-fade-up delay-100" data-cert-index="0">
+            <div class="cert-card reveal-fade-up delay-100" data-cert-index="0" onclick="openCertModal(0)" role="button" tabindex="0">
               <div class="cert-thumb-wrapper">
                 <span class="cert-overlay-pill">Grafest 2025</span>
                 <img src="assets/images/certificates/cert_1_grafest_web.jpg" alt="Grafest 2025 Petri Plate Art Certificate" class="cert-thumb-img" loading="lazy">
@@ -630,14 +673,13 @@
                 <h4 class="cert-title">Grafest 2025: Petri Plate Art</h4>
                 <p class="cert-issuer">Graphic Era (Deemed to be University), Dehradun • Certificate of Participation</p>
                 <div class="cert-view-action">
-                  <span>View Certificate Directly</span>
-                  <span>🔍</span>
+                  <span>View Certificate →</span>
                 </div>
               </div>
             </div>
 
             <!-- Certificate 2: Pariksha Pe Charcha 2023 -->
-            <div class="cert-card reveal-fade-up delay-200" data-cert-index="1">
+            <div class="cert-card reveal-fade-up delay-200" data-cert-index="1" onclick="openCertModal(1)" role="button" tabindex="0">
               <div class="cert-thumb-wrapper">
                 <span class="cert-overlay-pill">Prime Minister Letter</span>
                 <img src="assets/images/certificates/cert_2_pariksha_pe_charcha_web.jpg" alt="Pariksha Pe Charcha 2023 Certificate" class="cert-thumb-img" loading="lazy">
@@ -647,14 +689,13 @@
                 <h4 class="cert-title">Pariksha Pe Charcha 2023</h4>
                 <p class="cert-issuer">Letter of Appreciation from Hon'ble Prime Minister Narendra Modi</p>
                 <div class="cert-view-action">
-                  <span>View Certificate Directly</span>
-                  <span>🔍</span>
+                  <span>View Certificate →</span>
                 </div>
               </div>
             </div>
 
             <!-- Certificate 3: Gender Sensitization & Legal Awareness -->
-            <div class="cert-card reveal-fade-up delay-300" data-cert-index="2">
+            <div class="cert-card reveal-fade-up delay-300" data-cert-index="2" onclick="openCertModal(2)" role="button" tabindex="0">
               <div class="cert-thumb-wrapper">
                 <span class="cert-overlay-pill">National Commission for Women</span>
                 <img src="assets/images/certificates/cert_3_gender_sensitization_web.jpg" alt="Gender Sensitization and Legal Awareness Certificate" class="cert-thumb-img" loading="lazy">
@@ -664,14 +705,13 @@
                 <h4 class="cert-title">Gender Sensitization & Legal Awareness</h4>
                 <p class="cert-issuer">National Commission for Women & PM Shri Kendriya Vidyalaya IIP, Dehradun</p>
                 <div class="cert-view-action">
-                  <span>View Certificate Directly</span>
-                  <span>🔍</span>
+                  <span>View Certificate →</span>
                 </div>
               </div>
             </div>
 
             <!-- Certificate 4: Udemy Background Design -->
-            <div class="cert-card reveal-fade-up delay-100" data-cert-index="3">
+            <div class="cert-card reveal-fade-up delay-100" data-cert-index="3" onclick="openCertModal(3)" role="button" tabindex="0">
               <div class="cert-thumb-wrapper">
                 <span class="cert-overlay-pill">Udemy Professional</span>
                 <img src="assets/images/certificates/cert_4_udemy_background_design_web.jpg" alt="Background Design Landscapes and Environments Certificate" class="cert-thumb-img" loading="lazy">
@@ -681,14 +721,13 @@
                 <h4 class="cert-title">Background Design: Landscapes & Environments</h4>
                 <p class="cert-issuer">Environmental concept art, thumbnails, and color keys by Siobhan Twomey</p>
                 <div class="cert-view-action">
-                  <span>View Certificate Directly</span>
-                  <span>🔍</span>
+                  <span>View Certificate →</span>
                 </div>
               </div>
             </div>
 
             <!-- Certificate 5: NPTEL Sustainable Design -->
-            <div class="cert-card reveal-fade-up delay-200" data-cert-index="4">
+            <div class="cert-card reveal-fade-up delay-200" data-cert-index="4" onclick="openCertModal(4)" role="button" tabindex="0">
               <div class="cert-thumb-wrapper">
                 <span class="cert-overlay-pill">Elite • Score 65%</span>
                 <img src="assets/images/certificates/cert_5_nptel_sustainable_design_web.jpg" alt="NPTEL Sustainable Design Certificate" class="cert-thumb-img" loading="lazy">
@@ -698,8 +737,7 @@
                 <h4 class="cert-title">Strategies for Sustainable Design</h4>
                 <p class="cert-issuer">NPTEL • SWAYAM • Skill India • Funded by MoE, Government of India</p>
                 <div class="cert-view-action">
-                  <span>View Certificate Directly</span>
-                  <span>🔍</span>
+                  <span>View Certificate →</span>
                 </div>
               </div>
             </div>
@@ -751,8 +789,7 @@
                 <span>↗</span>
               </a>
               <button class="hero-secondary-btn trigger-cert-modal" onclick="openCertModal(0)" style="width: fit-content; cursor: pointer;">
-                <span>✦ View Official Certificates (Direct Viewer)</span>
-                <span>🔍</span>
+                <span>View Certificates ↗</span>
               </button>
             </div>
 
@@ -830,11 +867,7 @@
       <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">✕</button>
       
       <div class="modal-hero-cover">
-        <svg width="120" height="80" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="60" cy="40" r="28" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4"/>
-          <circle cx="60" cy="40" r="14" fill="#ffffff" opacity="0.1"/>
-          <path d="M 50 40 L 70 40 M 60 30 L 60 50" stroke="#ffffff" stroke-width="2"/>
-        </svg>
+        <img src="" alt="Project artwork" id="modalCoverImg" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
       </div>
 
       <div class="modal-body">
@@ -879,6 +912,8 @@
         </div>
       </div>
     </div>
+  </div>
+
   <!-- ==========================================================================
        CERTIFICATE DIRECT LIGHTBOX MODAL (NO GOOGLE DRIVE REDIRECT)
        ========================================================================== -->
@@ -888,6 +923,7 @@
         <div class="cert-modal-header-info">
           <h3 id="certModalTitle">Certificate Title</h3>
           <p id="certModalIssuer">Issuer & Date</p>
+          <p id="certModalDesc" style="font-size: 0.82rem; color: var(--text-secondary); margin-top: 0.35rem; line-height: 1.4; max-width: 650px;"></p>
         </div>
         <div class="cert-modal-controls">
           <button class="cert-nav-btn" id="certPrevBtn" aria-label="Previous certificate">← Previous</button>

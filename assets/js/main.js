@@ -318,6 +318,30 @@ const projectDetails = {
     problem: "Developing an engaging visual storytelling sequence from an initial abstract prompt.",
     solution: "Iterated through dozens of thumbnail sketches, focal point studies, and color mood keys to establish an evocative world.",
     impact: "Demonstrated strong creative versatility across traditional and applied art disciplines."
+  },
+  dengler: {
+    title: "Dengler — Design Project",
+    subtitle: "Layout, Typography & Visual Communication",
+    category: "Graphic Design / Layout",
+    discipline: "Applied Art & Graphic Design",
+    institution: "Graphic Era Hill University, Dehradun",
+    image: "assets/images/projects/dengler_web.jpg",
+    overview: "A graphic design composition exploring structured layout, typographic hierarchy, and cohesive visual communication — demonstrating applied art principles in a real-world design context.",
+    problem: "Developing a balanced and visually compelling design system that communicates information clearly while maintaining strong aesthetic identity.",
+    solution: "Applied principles of grid-based layout, intentional white space, and harmonious typography to produce a refined and purposeful design.",
+    impact: "Showcases proficiency in applied graphic design and the ability to deliver commercially viable visual solutions."
+  },
+  maleficent: {
+    title: "Maleficent — Editorial Book Cover Design",
+    subtitle: "The Tale of a Sleeping Beauty • Spine & Jacket Typography",
+    category: "Graphic Design / Publishing",
+    discipline: "Applied Art & Book Cover Design",
+    institution: "Graphic Era Hill University, Dehradun",
+    image: "assets/images/projects/maleficent_cover_web.jpg",
+    overview: "A full editorial jacket and book cover design for 'Maleficent: The Tale of a Sleeping Beauty'. Integrates high-contrast gothic villain portraiture, bespoke fantasy typography, back-cover barcode and publisher layout, and spine branding.",
+    problem: "Balancing dark fantasy aesthetics with readable publishing typography and clean commercial jacket layout.",
+    solution: "Combined a stark dual-tone palette (slate grey and deep blacks) with expressive horned silhouette motifs, precise typography hierarchy, and author attribution layout.",
+    impact: "Demonstrates advanced skill in commercial publishing design, cover art composition, and print-ready typography."
   }
 };
 
@@ -353,6 +377,13 @@ function initProjectModal() {
     modalProblem.textContent = data.problem;
     modalSolution.textContent = data.solution;
     modalImpact.textContent = data.impact;
+
+    // Set the cover image
+    const modalCoverImg = document.getElementById('modalCoverImg');
+    if (modalCoverImg) {
+      modalCoverImg.src = data.image || '';
+      modalCoverImg.style.display = data.image ? 'block' : 'none';
+    }
 
     if (modalLink) {
       if (data.driveUrl) {
@@ -469,13 +500,15 @@ function initCertificateModal() {
     currentCertIndex = index;
 
     const cert = certificateList[currentCertIndex];
-    certImg.src = cert.webImg;
-    certImg.alt = cert.title;
-    certTitle.textContent = cert.title;
-    certIssuer.textContent = `${cert.issuer} • ${cert.date}`;
-    certDesc.textContent = cert.desc;
-    certCounter.textContent = `Certificate ${currentCertIndex + 1} of ${certificateList.length}`;
-    certFullLink.href = cert.fullImg;
+    if (certImg) {
+      certImg.src = cert.webImg;
+      certImg.alt = cert.title;
+    }
+    if (certTitle) certTitle.textContent = cert.title;
+    if (certIssuer) certIssuer.textContent = `${cert.issuer} • ${cert.date}`;
+    if (certDesc) certDesc.textContent = cert.desc || '';
+    if (certCounter) certCounter.textContent = `Certificate ${currentCertIndex + 1} of ${certificateList.length}`;
+    if (certFullLink) certFullLink.href = cert.fullImg || cert.webImg;
 
     if (tabsContainer) {
       const tabs = tabsContainer.querySelectorAll('.cert-tab-pill');
@@ -515,21 +548,22 @@ function initCertificateModal() {
     if (e.key === 'ArrowRight') renderCert(currentCertIndex + 1);
   });
 
-  // Bind click on certificate cards and triggers
-  document.querySelectorAll('[data-cert-index]').forEach(el => {
-    el.addEventListener('click', (e) => {
+  // Event delegation on document so clicking anywhere on a certificate card or view button always works
+  document.addEventListener('click', (e) => {
+    const certCard = e.target.closest('[data-cert-index]');
+    if (certCard) {
       e.preventDefault();
-      const idx = parseInt(el.getAttribute('data-cert-index') || '0', 10);
+      const idx = parseInt(certCard.getAttribute('data-cert-index') || '0', 10);
       window.openCertModal(idx);
-    });
-  });
+      return;
+    }
 
-  // Bind any direct certificate triggers
-  document.querySelectorAll('.trigger-cert-modal').forEach(btn => {
-    btn.addEventListener('click', (e) => {
+    const triggerBtn = e.target.closest('.trigger-cert-modal');
+    if (triggerBtn) {
       e.preventDefault();
       window.openCertModal(0);
-    });
+      return;
+    }
   });
 }
 
